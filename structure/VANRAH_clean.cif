@@ -1,0 +1,62 @@
+data_
+
+_audit_creation_date      'Feb. 28, 2022'
+_audit_creation_method    'Draft CIF file generated with Atomsk'
+ 
+_chemical_name_common             ?
+_chemical_melting_point           ?
+_chemical_formula_iupac           'Ni C12 Co N6'
+_chemical_formula_moiety          'Ni C12 Co N6'
+_chemical_formula_sum             'Ni C12 Co N6'
+_chemical_formula_weight          345.801
+_chemical_compound_source         ?
+_chemical_absolute_configuration  ?
+_exptl_crystal_description        'EDIT-ENTRY'
+_diffrn_measurement_device_type   'EDIT-ENTRY'
+ 
+_space_group_IT_number            1
+_space_group_crystal_system       tetragonal
+_symmetry_space_group_name_Hall   'P 1'
+_symmetry_space_group_name_H-M    'P 1'
+ 
+loop_
+_space_group_symop_operation_xyz
+'+x,+y,+z'
+ 
+_cell_length_a                    7.2102
+_cell_length_b                    7.2102
+_cell_length_c                    7.1308
+_cell_angle_alpha                 90.0000
+_cell_angle_beta                  90.0000
+_cell_angle_gamma                 90.0000
+_cell_volume                      370.7088
+ 
+loop_
+ _atom_site_label
+ _atom_site_type_symbol
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+ _atom_site_thermal_displace_type
+ _atom_site_B_iso_or_equiv
+Ni1  Ni  0.000000  0.000000  0.500000 1.000000 Biso 1.523867
+C1  C  0.500000  0.344500  0.095400 1.000000 Biso 6.790288
+Co1  Co  0.500000  0.500000  0.500000 1.000000 Biso 1.279101
+N1  N  0.294600  0.294600  0.500000 1.000000 Biso 1.997608
+N2  N  0.500000  0.500000  0.193800 1.000000 Biso 1.784424
+C2  C  0.183500  0.183500  0.500000 1.000000 Biso 1.863381
+C3  C  0.655500  0.500000  0.095400 1.000000 Biso 6.790288
+N3  N  0.705400  0.294600  0.500000 1.000000 Biso 1.997608
+C4  C  0.816500  0.183500  0.500000 1.000000 Biso 1.863381
+C5  C  0.500000  0.655500  0.095400 1.000000 Biso 6.790288
+N4  N  0.705400  0.705400  0.500000 1.000000 Biso 1.997608
+C6  C  0.816500  0.816500  0.500000 1.000000 Biso 1.863381
+C7  C  0.344500  0.500000  0.095400 1.000000 Biso 6.790288
+N5  N  0.294600  0.705400  0.500000 1.000000 Biso 1.997608
+C8  C  0.183500  0.816500  0.500000 1.000000 Biso 1.863381
+C9  C  0.500000  0.655500  0.904600 1.000000 Biso 6.790288
+N6  N  0.500000  0.500000  0.806200 1.000000 Biso 1.784424
+C10  C  0.655500  0.500000  0.904600 1.000000 Biso 6.790288
+C11  C  0.500000  0.344500  0.904600 1.000000 Biso 6.790288
+C12  C  0.344500  0.500000  0.904600 1.000000 Biso 6.790288
