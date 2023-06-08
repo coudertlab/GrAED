@@ -12,7 +12,11 @@ Compilation that follows the rules set in the `Makefile`:
 make all
 ```
 
-## Example Usage
+## Use cases
+
+### Adsorption energies calculation
+
+This task is performed by the `graed` binary and gives adsorption enthalpy, Henry coefficient and statistical quantities of the energy grid. 
 
 If you want to run a surface sampling simulation on the structure KAXQIL (CSD code) from CoRE MOF 2019 all-solvent removed with the Dreiding+uff forcefield at 298K with a 12A cutoff for the xenon.
 ```
@@ -27,6 +31,25 @@ KAXQIL_clean_14,-44.626,2.21797,2.14037,10.0172,15.0287,73.1689,0.0300725,0.2181
 The results are printed in a comma separated format: structure name, adsorption enthalpy (kJ/mol), standard deviation of Boltzmann weighted energies, skewness, kurtosis, standard deviation of energies, Henry coefficient (mol/kg/Pa), Accessible Surface Area (m2/cm3), Time (s)
 
 This binary is supposed to be used in a high-throughput manner to add rows to a csv file.
+
+### Visualization
+
+The `pgrid` binary prints out a grid in the `grid/` folder using the following command:
+```
+./pgrid structure/KAXQIL_clean_14.cif forcefield/UFF.def 298.0 12.0 Xe 0.3 100 0.8
+```
+The structure name, the grid size in number of points and the computation time are given as an output, in the following format:
+```
+KAXQIL_clean_14,884736,0.590011
+```
+The file `grid/KAXQIL_clean_14_UFF_0.12_100_Xe.ccp4` is then output from the binary and can be used for further analysis or visualization for instance. 
+
+To visualize the grid, use the python file `viz/visualize_grid.py`. To modify the visualization parameters please refer to the documentation of the python library plotly. To use the file simply run the following command:
+```
+python3 viz/visualize_grid.py grid/KAXQIL_clean_14_UFF_0.12_100_Xe.ccp4
+```
+This will generate a .html file in `viz` that can be read by any web broawser (firefox, chrome, etc.) and it will be automatically launched in the browser.
+
 
 ## Acknowledgement
 
