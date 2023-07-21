@@ -22,7 +22,7 @@ If you want to run a surface sampling simulation on the structure KAXQIL (CSD co
 ```
 ./graed structure/KAXQIL_clean_14.cif forcefield/UFF.def 298 12.0 Xe 0.12 100 0.8
 ```
-The inputs correspond to the structure cif file, the forcefield definition file (Raspa), the temperature, the cutoff in LJ potential, the atom, the grid spacing, the energy threshold under which the nergy is accurately calculated, the relative size of the blocking framework atoms (between 0 and 1).
+The inputs correspond to the structure cif file, the forcefield definition file (Raspa), the temperature, the cutoff in LJ potential, the atom, the grid spacing, the energy threshold under which the energy is accurately calculated, the relative size of the blocking framework atoms (between 0 and 1).
 
 You should get an output that has values close to this:
 ```
